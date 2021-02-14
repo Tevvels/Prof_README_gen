@@ -23,16 +23,16 @@ function renderLicenseSection(license) {}
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
    return(` 
-  #♠${data.title}♦
+  # ${data.title}
    ${data.description}
 
   ## Table of Contents
-  [Installation](#installation)/
-  [Usage](#usage)/
-  [Contributions](#contribution)/
-  [Tests](#test)/
-  [License](#license)/
-  [Questions](#questions)
+  [Installation](#installation) <br>
+  [Usage](#usage) <br>
+  [Contributions](#contribution) <br>
+  [Tests](#test) <br>
+  [License](#license) <br>
+  [Questions](#questions) <br>
   
 
     
@@ -41,16 +41,15 @@ function generateMarkdown(data) {
   ${data.installation}
 
   ## <h2 id="usage">Usage</h2>
-   ${data.usage}
-
+  ${data.usage}
   ## <h2 id="contribution">Contributions</h2>
-   ${data.contribution}
-  ## <h2 id="test">Tests</h2>
-  ${data.tests}
+  ${data.contribution}
+  ## <h2 id="test">Test Instructions</h2>
+  ${data.test}
   ## <h2 id="license"> License</h2>
-   ${renderLicenseBadge(data.license)};
+   ${renderLicenseBadge(data.license)}
   ## <h2 id="questions"> Questions </h2>
-  for any questions please contact me at
+    Any questions please contact me at
    [Github](https://github.com/Tevvels)
    or at email:chrisbwatkins@gmail.com
 
