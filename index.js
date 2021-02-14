@@ -42,7 +42,7 @@ const questions = [
     {
         type:"list",
         message:"What license?",
-        choices:["MIT","IBM"],
+        choices:["MIT","IBM","Apache"],
         name:"license"
     },
     {
