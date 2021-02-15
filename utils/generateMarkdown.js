@@ -48,7 +48,7 @@ function generateMarkdown(data) {
   ## <h2 id="contribution">Contributions</h2>
   ${data.contribution}
   ## <h2 id="test">Test Instructions</h2>
-  ${data.test}
+  ${data.tests}
   ## <h2 id="license"> License</h2>
    ${renderLicenseBadge(data.license)}
   ## <h2 id="questions"> Questions </h2>
